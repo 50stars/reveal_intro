@@ -7,10 +7,10 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/League.css">
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="lib/css/sky.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -24,8 +24,406 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section >
+					<div style="height:650px">
+						<img src="lib/img/logo.png"></img>
+					</div>
+				</section>
+
+				<section>
+					<section>
+						<h2>About You
+						</h2>
+					</section>
+					<section>
+						<img src="lib\img\IAF.png"></img>
+					</section>
+					<section>
+						<img src="lib\img\units_chart.png"></img>
+					</section>
+					<section>
+						<img src="lib\img\shirts_chart.png"></img>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Schedule
+						</h2>
+					</section>
+					<section>
+						<p>13.2
+						</p>
+						<table style="border-width:none">
+							<tr>
+								<th>
+									אירוע
+								</th>
+								<th>
+									שעה
+								</th>
+							</tr>
+							<tr>
+								<td>
+									התכנסות וארוחת בוקר
+								</td>
+								<td>
+									08:00
+								</td>
+							</tr>
+							<tr>
+								<td>
+									דברי פתיחה והוראות
+								</td>
+								<td>
+									09:00
+								</td>
+							</tr>
+							<tr>
+								<td>
+									התחלה
+								</td>
+								<td>
+									10:15
+								</td>
+							</tr>
+							<tr>
+								<td>
+									ארוחת צהריים
+								</td>
+								<td>
+									13:00
+								</td>
+							</tr>
+							<tr>
+								<td>
+									הרצאה על Deep Learning
+								</td>
+								<td>
+									16:00
+								</td>
+							</tr>
+							<tr>
+								<td>
+									ארוחת ערב
+								</td>
+								<td>
+									18:00
+								</td>
+							</tr>
+							<tr>
+								<td>
+									סוף היום הראשון
+								</td>
+								<td>
+									22:00
+								</td>
+							</tr>
+
+						</table>
+					</section>
+					<section>
+						<p>14.2
+						</p>
+						<table>
+							<tr>
+								<th>
+									אירוע
+								</th>
+								<th>
+									שעה
+								</th>
+							</tr>
+							<tr>
+								<td>
+									ארוחת בוקר וחזרה לעבודה
+								</td>
+								<td>
+									08:00
+								</td>
+							</tr>
+							<tr>
+								<td>
+									סוף התחרות וארוחת צהריים
+								</td>
+								<td>
+									12:00
+								</td>
+							</tr>
+							<tr>
+								<td>
+								הצגת התוצרים
+								</td>
+								<td>
+									13:00
+								</td>
+							</tr>
+							<tr>
+								<td>
+									הכרזה על הזוכים
+								</td>
+								<td>
+									15:00
+								</td>
+							</tr>
+							<tr>
+								<td>
+									סוף האירוע
+								</td>
+								<td>
+									16:00
+								</td>
+							</tr>
+						</table>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2 >Intro</h2>
+					</section>
+					<section data-background-video="lib/video/data_hack_intro.mp4" style="color:rgb(50,50,50)">
+
+						<div>
+							<p>Plana, מדינה בגלקסיית אופק הרחוקה, היא מדינה מתפתחת הסובלת
+							מאיי מורדים הקיימים בתוכה ויורים עליה רקטות באופן תדיר.
+							<!-- <p></p> -->
+							<!-- <img src="C:/Users/50sta/Pictures/logo.png"></img> -->
+						</div>
+					</section>
+					<section data-background-video="lib/video/radar_video.mp4" data-background-video-muted style="color:rgb(50,50,50)">
+						<p>ברחבי Plana פזורים מכ"מים רבים הקולטים את מסלולי הרקטות הנורות עליה. </p>
+					</section>
+					<section>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Mission
+						</h2>
+					</section>
+					<section>
+						<p>עליכם לבנות מודל שבהינתן מסלול של רקטה, יחזה מה סוג הרקטה, על מנת להעריך כמה שיותר מוקדם את מידת הסיכון הנשקפת מפגיעת טיל, ולבצע היערכות מתאימה</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Description
+						</h2>
+					</section>
+					<section>
+						<p>
+							נתון לכם קובץ בשם "train.csv" בו נמצא מידע על מסלולים שונים שנקלטו במכ"מים הפזורים ב Plana במהלך ה4  שנים האחרונות.
+						</p>
+						<img  src="lib/img/data_exmpale.png" height="300px">
+						</img>
+					</section>
+					<section>
+						<p>כל רשומה בקובץ מכילה קליטה של נקודה במעופה של רקטה:</p>
+						<table>
+							<tr>
+								<th>
+									שם המשתנה
+								</th>
+								<th>
+									סוג
+								</th>
+								<th>
+								פירוט
+								</th>
+							</tr>
+							<tr>
+								<td>
+									index
+								</td>
+								<td>
+									מספר
+								</td>
+								<td>
+								קוד רשומה
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Label
+								</td>
+								<td>
+									string
+								</td>
+								<td>
+									משתנה המטרה: מציין את סוג הרקטה
+								</td>
+							</tr>
+							<tr>
+								<td>
+									time_stamp
+								</td>
+								<td>
+									datetime
+								</td>
+								<td>
+								מייצג את הזמן בו נקלטה הנקודה
+								</td>
+							</tr>
+							<tr>
+								<td>
+									traj_ind
+								</td>
+								<td>
+									מספר
+								</td>
+								<td>
+								קוד מסלול
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									קורדינטות
+								</td>
+								<td>
+									(x,y,z)
+								</td>
+								<td>
+									מייצגות את הקורדינטות של הנקודה הנקלטת
+								</td>
+							</tr>
+
+						</table>
+
+					</section>
+					<section>
+						<p>כך אם במסלול של רקטה יש 50 נקודות, מצופה שיהיה בקובץ המידע הנ"ל 50 רשומות המתאימות ל
+							-traj_ind של המסלול הנ"ל.</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Submission
+						</h2>
+					</section>
+					<section>
+						<p>נתון לכם קובץ sample_submission.csv המכיל דוגמה להגשה (בה כל המסלולים מקבלים תיוג 0 עבור סוג הרקטה). </p>
+					</section>
+					<section>
+						<p>מצופה מכם לשלוח קובץ עם 2 עמודות:</p>
+						<table>
+							<tr>
+								<th>
+									שם המשתנה
+								</th>
+								<th>
+								פירוט
+								</th>
+							</tr>
+							<tr>
+								<td>
+									trajectory_ind
+								</td>
+								<td>
+								מכילה את המזהים של המסלולים בקובץ המבחן
+								</td>
+							</tr>
+							<tr>
+								<td>
+									label
+								</td>
+								<td>
+								סוג הרקטה שחזיתם עבור המסלול
+								</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<p>עקבו אחרי הפורמט של sample_submission.csv כדי להבין מה בדיוק עליכם לשלוח.</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>The Staff</h2>
+					</section>
+					<section>
+						<table>
+							<tr>
+								<td>
+									<img src="lib/img/tal.png" width="240px"></img>
+								</td>
+								<td>
+									<img src="lib/img/emanuel.png"></img>
+								</td>
+								<td>
+									<img src="lib/img/yoav.png"></img>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="lib/img/daniel.png" width="240px"></img>
+								</td>
+								<td>
+									<img src="lib/img/damian.png"></img>
+								</td>
+								<td>
+									<img src="lib/img/raz.png"></img>
+								</td>
+							</tr>
+						</table>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Domain Knowledge
+						</h2>
+					</section>
+					<section>
+						<p>Plana  עברה אסונות טבע רבים במרוצת השנים שהשאירו את פני השטח שלה "שטוחים", כלומר אין בה הרים וודיות.
+ניתן להניח שרקטות עוברות מסלול בליסטי רגיל המאפיין גוף נקודתי חסר חיכוך ושחוקי הפיזיקה המוכרים לנו מתקיימים גם בPlana.</p>
+					</section>
+					<section>
+						<p>משיחה עם גורמים מודיעינים עלו התובנות הבאות:</p>
+
+					</section>
+					<section>
+							<p>
+								יש סברה כי רקטות שונות משוגרות ממשגרים שונים. לכל משגר נפח הטענה שונה של רקטות (כלומר כמות מקסימלית של רקטות שיכולות להיות משוגרות ממנו).
+							</p>
+					</section>
+					<section>
+							<p>
+								רקטות נורות לרוב במטחים (יחד או בשהייה קצרה)
+							</p>
+					</section>
+					<section>
+							<p>
+								Plana מכירה שיש קבוצות לא רבות של מורדים המרוכזים באזורים גיאוגרפיים מסויימים במדינה (שעליהם איננה יודעת להצביע במדויק) ולהם יש תו"ל שונה זו מזו (אינם מאוגדים תחת ארגון על וכל אחד מהם רוכש את אספקת הרקטות שלו באופן עצמאי)
+							</p>
+					</section>
+
+				</section>
+				<section>
+					<section>
+						<h2>Evaluation
+						</h2>
+					</section>
+					<section>
+						<p>קיבלנו קובץ מבחן test.csv  שעליו המודל שלכם ייבחן.
+הקובץ מכיל את אותו המידע בדיוק כמו ב- train.csv רק ללא השדה label, שאותו עליכם לחזות (וכמובן על מסלולים שונים מאשר ב-train. אחרת לא היינו מתכנסים כאן היום).</p>
+					</section>
+					<section>
+						<p>הגורם המבצעי בPlana מעוניין במערכת שיודעת לעבוד טוב עבור כל סוגי הטילים. הוא איננו מוכן לסבול מצב בו יהיה טיל שעבורו המערכת תעבוד בצורה לא טובה.
+אי לכך, לאחר דיונים ממושכים עימם הוסכם מדד ההערכה הבא:
+</p>
+<span class="fragment visible">
+		<img src="lib\img\min_acc.png"></img>
+</span>
+<span class="fragment visible">
+	<h3>
+		<span class="fragment highlight-blue visible">Minimum Accuracy</span>
+	</h3>
+</span>
+					</section>
+				</section>
+				<section>
+					<h1>Good Luck!</h1>
+				</section>
+
 			</div>
 		</div>
 
@@ -36,6 +434,10 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
+				parallaxBackgroundSize: '2920px 1080px',
+				parallaxBackgroundImage: 'lib/img/sky_background2.jpg',
+				backgroundTransition: 'fade',
+				rtl: false,
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
